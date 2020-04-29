@@ -13,7 +13,8 @@ class DetailsScreen extends StatelessWidget{
 
   @override
   Widget build(BuildContext context){
-    return Column(
+    return Center(
+      child: Column(
       children: <Widget>[
         Row(
           children: <Widget>[
@@ -47,6 +48,7 @@ class DetailsScreen extends StatelessWidget{
           ],
         )
       ], 
+    )
     ); 
   }
 }

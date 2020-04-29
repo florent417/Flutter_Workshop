@@ -23,7 +23,7 @@ class PokemonGridItem extends StatelessWidget{
             children: <Widget>[ 
               Container(
                   decoration: BoxDecoration(
-                    color: Colors.blueGrey[700],
+                    color: Colors.blueGrey[500],
                     shape: BoxShape.circle
                   ),
                   child: Center(
@@ -34,12 +34,8 @@ class PokemonGridItem extends StatelessWidget{
                     ),
                   )
                 ),
-                Center(
-                  child: Text(pokemon.name),
-                ),
-                Center(
-                  child: Text("#"+pokemon.number),
-                ),
+                Text(pokemon.name, style: TextStyle(fontSize: 16, color: Colors.white)),
+                Text("#"+pokemon.number, style: TextStyle(color: Colors.grey)),
             ], 
           ),
     );
